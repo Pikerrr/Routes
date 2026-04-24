@@ -1,3 +1,10 @@
-ini halaman home<br>
-<a href="/produk">ke halaman produk</a><br>
-<a href="/keranjang">ke halaman keranjang</a>
+<?= $this->extend('layout') ?>
+<?= $this->section('content') ?>
+
+<div class="card">
+  <div class="card-body">
+    <p>Ini halaman Home</p>
+  </div>
+</div>
+
+<?= $this->endSection() ?>
