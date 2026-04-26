@@ -10,8 +10,8 @@
         <p><b>Username:</b> <?= session()->get('username') ?></p>
         <p><b>Role:</b> <?= session()->get('role') ?></p>
         <p><b>Email:</b> <?= session()->get('email') ?></p>
-        <p><b>Login Time:</b> <?= session()->get('login_time') ?></p>
-        <p><b>Status:</b> 
+        <p><b>Waktu Login:</b> <?= session()->get('login_time') ?></p>
+        <p><b>Status Login:</b> 
           <?= session()->get('isLoggedIn') ? 'Logged In' : 'Not Logged In' ?>
         </p>
 
