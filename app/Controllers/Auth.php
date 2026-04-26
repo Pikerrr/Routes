@@ -11,7 +11,7 @@ class Auth extends BaseController
             'role'     => 'admin'
         ],
         [
-            'username' => 'buyer',
+            'username' => 'fikri',
             'password' => '123',
             'role'     => 'buyer'
         ]
