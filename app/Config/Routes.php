@@ -8,3 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/produk', 'ProdukController::index');
 $routes->get('/keranjang', 'TransaksiController::index');
+
+$routes->get('/login', 'Auth::login');
+$routes->post('/login/process', 'Auth::processLogin');
+$routes->get('/logout', 'Auth::logout');
