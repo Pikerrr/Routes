@@ -32,10 +32,12 @@ class Auth extends BaseController
         foreach ($this->users as $user) {
             if ($user['username'] == $username && $user['password'] == $password) {
 
-                $session->set([
-                    'username'   => $user['username'],
-                    'role'       => $user['role'],
-                    'isLoggedIn' => true
+               session()->set([
+                 'username'   => $user['username'],
+                 'role'       => $user['role'],
+                 'email'      => $user['username'] . '@gmail.com', // dummy dulu
+                 'login_time' => date('Y-m-d H:i:s'),
+                 'isLoggedIn' => true
                 ]);
 
                 return redirect()->to('/');
